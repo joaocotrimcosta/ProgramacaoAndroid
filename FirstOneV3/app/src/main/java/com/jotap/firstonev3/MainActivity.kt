@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -53,7 +54,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             )
 
         }
-        Image(painter = painterResource(id = R.drawable.eu_52_transparente), contentDescription = "Bad Model", modifier=Modifier.size(48.dp))
+        Image(painter = painterResource(id = R.drawable.eu_52_transparente), contentDescription = "Bad Model", modifier=Modifier.size(48.dp).clip(CircleShape))
     }
 }
 
