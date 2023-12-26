@@ -14,13 +14,16 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.jotap.amelhorcalculadoradaminharua.Estado
+import com.jotap.amelhorcalculadoradaminharua.MyViewModel
 
 
 @Composable
 
 fun RegularBottom(text: String, myColor1: Color, onClick: (String) -> Unit) {
     Button(
-        onClick = { onClick(text) },
+        //onClick = { onClick(text) },
+        onClick = {MyViewModel().estadoAtual = Estado()},
         colors = ButtonDefaults.buttonColors(myColor1),
         modifier = Modifier
             .clickable {  }
@@ -43,7 +46,7 @@ fun RegularBottom(text: String, myColor1: Color, onClick: (String) -> Unit) {
 
 fun BigBottom(text: String, myColor1: Color, onClick: (String) -> Unit) {
     Button(
-        onClick = { onClick(text) },
+        onClick = { MyViewModel().estadoAtual = Estado() },
         colors = ButtonDefaults.buttonColors(myColor1),
         modifier = Modifier
         .height(75.dp)
@@ -64,7 +67,7 @@ fun BigBottom(text: String, myColor1: Color, onClick: (String) -> Unit) {
 @Composable
 fun BigEqualBottom(text: String, myColor1: Color, onClick: (String) -> Unit) {
     Button(
-        onClick = {  onClick(text) },
+        onClick = { MyViewModel().estadoAtual = Estado() },
         colors = ButtonDefaults.buttonColors(myColor1),
         modifier = Modifier
             .height(75.dp)

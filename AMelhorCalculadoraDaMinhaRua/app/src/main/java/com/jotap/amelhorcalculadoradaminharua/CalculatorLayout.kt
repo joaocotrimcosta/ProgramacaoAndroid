@@ -105,7 +105,8 @@ fun CalculatorLayout(
                 .fillMaxWidth()
                 .height(110.dp)
                 .background(
-                    color = MyBlue3)
+                    color = MyBlue3
+                )
                 .padding(5.dp)
         ) {
             Row(
@@ -115,21 +116,18 @@ fun CalculatorLayout(
                     .padding(5.dp),
                 horizontalArrangement = SpaceBetween
             ) {
-                BigBottom(text = "AC", myColor1 = MyBlue2) { buttonText ->
-                    variableValue = "$variableValue$buttonText"
-                }
+                BigBottom(
+                    text = "AC", myColor1 = MyBlue2)
+                { buttonText -> variableValue = "$variableValue$buttonText" }
                 Spacer(modifier = Modifier.width(16.dp))
-                BigBottom(text = "Del", myColor1 = MyBlue2) { buttonText ->
-                    variableValue = "$variableValue$buttonText"
-                }
+                BigBottom(text = "Del", myColor1 = MyBlue2)
+                { buttonText -> variableValue = "$variableValue$buttonText" }
                 Spacer(modifier = Modifier.width(16.dp))
-                RegularBottom(text = "%", myColor1 = MyBlue2) { buttonText ->
-                    variableValue = "$variableValue$buttonText"
-                }
+                RegularBottom(text = "%", myColor1 = MyBlue2)
+                { buttonText -> variableValue = "$variableValue$buttonText" }
                 Spacer(modifier = Modifier.width(16.dp))
-                RegularBottom(text = "/", myColor1 = MyBlue2) { buttonText ->
-                    variableValue = "$variableValue$buttonText"
-                }
+                RegularBottom(text = "/", myColor1 = MyBlue2)
+                { buttonText -> variableValue = "$variableValue$buttonText" }
             }
         }
         Box(
@@ -137,7 +135,8 @@ fun CalculatorLayout(
                 .fillMaxWidth()
                 .height(110.dp)
                 .background(
-                    color = MyBlue3)
+                    color = MyBlue3
+                )
                 .padding(5.dp)
         ) {
             Row(
@@ -147,21 +146,17 @@ fun CalculatorLayout(
                     .padding(10.dp),
                 horizontalArrangement = SpaceBetween
             ) {
-                RegularBottom(text = "7", myColor1 = MyBlue1) { buttonText ->
-                    variableValue = "$variableValue$buttonText"
-                }
+                RegularBottom(text = "7", myColor1 = MyBlue1)
+                { buttonText -> variableValue = "$variableValue$buttonText" }
                 Spacer(modifier = Modifier.width(16.dp))
-                RegularBottom(text = "8", myColor1 = MyBlue1) { buttonText ->
-                    variableValue = "$variableValue$buttonText"
-                }
+                RegularBottom(text = "8", myColor1 = MyBlue1)
+                { buttonText -> variableValue = "$variableValue$buttonText" }
                 Spacer(modifier = Modifier.width(16.dp))
-                RegularBottom(text = "9", myColor1 = MyBlue1) { buttonText ->
-                    variableValue = "$variableValue$buttonText"
-                }
+                RegularBottom(text = "9", myColor1 = MyBlue1)
+                { buttonText -> variableValue = "$variableValue$buttonText" }
                 Spacer(modifier = Modifier.width(16.dp))
-                RegularBottom(text = "*", myColor1 = MyBlue2) { buttonText ->
-                    variableValue = "$variableValue$buttonText"
-                }
+                RegularBottom(text = "*", myColor1 = MyBlue2)
+                { buttonText -> variableValue = "$variableValue$buttonText" }
             }
         }
         Box(
@@ -169,7 +164,8 @@ fun CalculatorLayout(
                 .fillMaxWidth()
                 .height(110.dp)
                 .background(
-                    color = MyBlue3)
+                    color = MyBlue3
+                )
                 .padding(5.dp)
         ) {
             Row(
@@ -179,21 +175,17 @@ fun CalculatorLayout(
                     .padding(10.dp),
                 horizontalArrangement = SpaceBetween
             ) {
-                RegularBottom(text = "4", myColor1 = MyBlue1) { buttonText ->
-                    variableValue = "$variableValue$buttonText"
-                }
+                RegularBottom(text = "4", myColor1 = MyBlue1)
+                { buttonText -> variableValue = "$variableValue$buttonText" }
                 Spacer(modifier = Modifier.width(16.dp))
-                RegularBottom(text = "5", myColor1 = MyBlue1) { buttonText ->
-                    variableValue = "$variableValue$buttonText"
-                }
+                RegularBottom(text = "5", myColor1 = MyBlue1)
+                { buttonText -> variableValue = "$variableValue$buttonText" }
                 Spacer(modifier = Modifier.width(16.dp))
-                RegularBottom(text = "6", myColor1 = MyBlue1) { buttonText ->
-                    variableValue = "$variableValue$buttonText"
-                }
+                RegularBottom(text = "6", myColor1 = MyBlue1)
+                { buttonText -> variableValue = "$variableValue$buttonText" }
                 Spacer(modifier = Modifier.width(16.dp))
-                RegularBottom(text = "-", myColor1 = MyBlue2) { buttonText ->
-                    variableValue = "$variableValue$buttonText"
-                }
+                RegularBottom(text = "-", myColor1 = MyBlue2)
+                { buttonText -> variableValue = "$variableValue$buttonText" }
             }
         }
         Box(
@@ -201,7 +193,8 @@ fun CalculatorLayout(
                 .fillMaxWidth()
                 .height(110.dp)
                 .background(
-                    color = MyBlue3)
+                    color = MyBlue3
+                )
                 .padding(5.dp)
         ) {
             Row(
@@ -211,21 +204,17 @@ fun CalculatorLayout(
                     .padding(10.dp),
                 horizontalArrangement = SpaceBetween
             ) {
-                RegularBottom(text = "1", myColor1 = MyBlue1) { buttonText ->
-                    variableValue = "$variableValue$buttonText"
-                }
+                RegularBottom(text = "1", myColor1 = MyBlue1)
+                { buttonText -> variableValue = "$variableValue$buttonText" }
                 Spacer(modifier = Modifier.width(16.dp))
-                RegularBottom(text = "2", myColor1 = MyBlue1) { buttonText ->
-                    variableValue = "$variableValue$buttonText"
-                }
+                RegularBottom(text = "2", myColor1 = MyBlue1)
+                { buttonText -> variableValue = "$variableValue$buttonText" }
                 Spacer(modifier = Modifier.width(16.dp))
-                RegularBottom(text = "3", myColor1 = MyBlue1) { buttonText ->
-                    variableValue = "$variableValue$buttonText"
-                }
+                RegularBottom(text = "3", myColor1 = MyBlue1)
+                { buttonText -> variableValue = "$variableValue$buttonText" }
                 Spacer(modifier = Modifier.width(16.dp))
-                RegularBottom(text = "+", myColor1 = MyBlue2) { buttonText ->
-                    variableValue = "$variableValue$buttonText"
-                }
+                RegularBottom(text = "+", myColor1 = MyBlue2)
+                { buttonText -> variableValue = "$variableValue$buttonText" }
             }
         }
         Box(
@@ -233,7 +222,8 @@ fun CalculatorLayout(
                 .fillMaxWidth()
                 .height(110.dp)
                 .background(
-                    color = MyBlue3)
+                    color = MyBlue3
+                )
                 .padding(5.dp)
         ) {
             Row(
@@ -243,17 +233,14 @@ fun CalculatorLayout(
                     .padding(10.dp),
                 horizontalArrangement = SpaceBetween
             ) {
-                RegularBottom(text = "0", myColor1 = MyBlue1) { buttonText ->
-                    variableValue = "$variableValue$buttonText"
-                }
+                RegularBottom(text = "0", myColor1 = MyBlue1)
+                { buttonText -> variableValue = "$variableValue$buttonText" }
                 Spacer(modifier = Modifier.width(16.dp))
-                BigBottom(text = ".", myColor1 = MyBlue2) { buttonText ->
-                    variableValue = "$variableValue$buttonText"
-                }
+                BigBottom(text = ".", myColor1 = MyBlue2)
+                { buttonText -> variableValue = "$variableValue$buttonText" }
                 Spacer(modifier = Modifier.width(16.dp))
-                BigEqualBottom(text = "=", myColor1 = MyBlue4) { buttonText ->
-                    variableValue = "$variableValue$buttonText"
-                }
+                BigEqualBottom(text = "=", myColor1 = MyBlue4)
+                { buttonText -> variableValue = "$variableValue$buttonText" }
             }
         }
     }

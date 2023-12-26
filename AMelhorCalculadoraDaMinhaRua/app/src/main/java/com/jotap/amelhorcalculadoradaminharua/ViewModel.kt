@@ -7,6 +7,5 @@ import androidx.lifecycle.ViewModel
 
 class MyViewModel: ViewModel() {
     var estadoAtual by mutableStateOf(Estado())
-    private set
 
 }
