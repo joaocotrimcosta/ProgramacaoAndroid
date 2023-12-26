@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 
 @Composable
@@ -21,9 +22,8 @@ fun RegularBottom(text: String, myColor1: Color, onClick: (String) -> Unit) {
         onClick = { onClick(text) },
         colors = ButtonDefaults.buttonColors(myColor1),
         modifier = Modifier
-            .height(56.dp)
-            .width(50.dp)
-            //.weight(2f)
+            .height(70.dp)
+            .width(68.dp)
             .background(
                 color = myColor1,
                 shape = RoundedCornerShape(16.dp)
@@ -33,6 +33,7 @@ fun RegularBottom(text: String, myColor1: Color, onClick: (String) -> Unit) {
             text = text,
             fontWeight = FontWeight.Bold,
             color = Color.White,
+            fontSize = 22.sp,
         )
     }
 }
@@ -43,8 +44,8 @@ fun BigBottom(text: String, myColor1: Color, onClick: (String) -> Unit) {
         onClick = { onClick(text) },
         colors = ButtonDefaults.buttonColors(myColor1),
         modifier = Modifier
-        .height(56.dp)
-        .width(75.dp)
+        .height(75.dp)
+        .width(78.dp)
         .background(
             color = myColor1,
             shape = RoundedCornerShape(16.dp)
@@ -54,6 +55,7 @@ fun BigBottom(text: String, myColor1: Color, onClick: (String) -> Unit) {
             text = text,
             fontWeight = FontWeight.Bold,
             color = Color.White,
+            fontSize = 20.sp,
         )
     }
 }
@@ -63,8 +65,8 @@ fun BigEqualBottom(text: String, myColor1: Color, onClick: (String) -> Unit) {
         onClick = {  onClick(text) },
         colors = ButtonDefaults.buttonColors(myColor1),
         modifier = Modifier
-            .height(56.dp)
-            .width(150.dp)
+            .height(75.dp)
+            .width(145.dp)
             .background(
                 color = myColor1,
                 shape = RoundedCornerShape(16.dp)
@@ -74,6 +76,7 @@ fun BigEqualBottom(text: String, myColor1: Color, onClick: (String) -> Unit) {
             text = text,
             fontWeight = FontWeight.Bold,
             color = Color.White,
+            fontSize = 22.sp,
         )
     }
 }

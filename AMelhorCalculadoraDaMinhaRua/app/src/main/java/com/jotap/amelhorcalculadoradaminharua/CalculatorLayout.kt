@@ -55,7 +55,7 @@ fun CalculatorLayout() {
                     color = MyBlue1,
                     shape = RoundedCornerShape(16.dp)
                 )
-                .padding(16.dp)
+                .padding(12.dp)
         ) {
             Text(
                 text = "A melhor calculadora da minha rua",
@@ -72,7 +72,7 @@ fun CalculatorLayout() {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .height(270.dp)
+                .height(200.dp)
                 .background(
                     color = MyBlue1,
                     shape = RoundedCornerShape(16.dp)
@@ -97,16 +97,16 @@ fun CalculatorLayout() {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .height(100.dp)
+                .height(110.dp)
                 .background(
                     color = MyBlue3)
-                .padding(10.dp)
+                .padding(5.dp)
         ) {
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(100.dp)
-                    .padding(10.dp),
+                    .padding(5.dp),
                 horizontalArrangement = SpaceBetween
             ) {
                 BigBottom(text = "AC", myColor1 = MyBlue2) { buttonText ->
@@ -129,10 +129,10 @@ fun CalculatorLayout() {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .height(100.dp)
+                .height(110.dp)
                 .background(
                     color = MyBlue3)
-                .padding(10.dp)
+                .padding(5.dp)
         ) {
             Row(
                 modifier = Modifier
@@ -161,10 +161,10 @@ fun CalculatorLayout() {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .height(100.dp)
+                .height(110.dp)
                 .background(
                     color = MyBlue3)
-                .padding(10.dp)
+                .padding(5.dp)
         ) {
             Row(
                 modifier = Modifier
@@ -193,10 +193,10 @@ fun CalculatorLayout() {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .height(100.dp)
+                .height(110.dp)
                 .background(
                     color = MyBlue3)
-                .padding(10.dp)
+                .padding(5.dp)
         ) {
             Row(
                 modifier = Modifier
@@ -225,10 +225,10 @@ fun CalculatorLayout() {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .height(100.dp)
+                .height(110.dp)
                 .background(
                     color = MyBlue3)
-                .padding(10.dp)
+                .padding(5.dp)
         ) {
             Row(
                 modifier = Modifier
@@ -237,7 +237,7 @@ fun CalculatorLayout() {
                     .padding(10.dp),
                 horizontalArrangement = SpaceBetween
             ) {
-                BigBottom(text = "0", myColor1 = MyBlue2) { buttonText ->
+                RegularBottom(text = "0", myColor1 = MyBlue1) { buttonText ->
                     variableValue = "$variableValue$buttonText"
                 }
                 Spacer(modifier = Modifier.width(16.dp))
