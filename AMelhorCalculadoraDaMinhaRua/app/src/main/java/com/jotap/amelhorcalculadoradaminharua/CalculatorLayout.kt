@@ -23,21 +23,24 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.jotap.amelhorcalculadoradaminharua.Components.BigBottom
 import com.jotap.amelhorcalculadoradaminharua.Components.BigEqualBottom
 import com.jotap.amelhorcalculadoradaminharua.Components.RegularBottom
+import com.jotap.amelhorcalculadoradaminharua.Estado
 import com.jotap.amelhorcalculadoradaminharua.ui.theme.MyBlue1
 import com.jotap.amelhorcalculadoradaminharua.ui.theme.MyBlue2
 import com.jotap.amelhorcalculadoradaminharua.ui.theme.MyBlue3
 import com.jotap.amelhorcalculadoradaminharua.ui.theme.MyBlue4
 
 
-@Preview
+//@Preview
 @Composable
-fun CalculatorLayout() {
+fun CalculatorLayout(
+    estadoAtual: Estado,
+    )
+{
 
     var variableValue by remember { mutableStateOf("0") }
     val buttonText by remember { mutableStateOf("0") }
@@ -80,12 +83,15 @@ fun CalculatorLayout() {
                 .padding(16.dp)
         ) {
             Text(
-                text = variableValue,
+                text = estadoAtual.imput1 +
+                        (estadoAtual.acao ?: ""
+                        + estadoAtual.imput2),
                 fontFamily = FontFamily.Monospace,
                 color = Color.Blue,
                 textAlign = TextAlign.End,
-                fontSize = 40.sp,
+                fontSize = 60.sp,
                 fontWeight = FontWeight.Bold,
+                maxLines = 2,
                 modifier = Modifier
                     .fillMaxWidth()
                     .align(Alignment.BottomEnd)

@@ -1,6 +1,7 @@
 package com.jotap.amelhorcalculadoradaminharua.Components
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -22,6 +23,7 @@ fun RegularBottom(text: String, myColor1: Color, onClick: (String) -> Unit) {
         onClick = { onClick(text) },
         colors = ButtonDefaults.buttonColors(myColor1),
         modifier = Modifier
+            .clickable {  }
             .height(70.dp)
             .width(68.dp)
             .background(
